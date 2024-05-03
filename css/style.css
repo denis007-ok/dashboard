@@ -1,0 +1,156 @@
+section {
+    margin-bottom: 0.5rem;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mrg-10 {
+    margin-top: 10px;
+}
+
+.logo {
+    background: url(../pic/logo.png) center no-repeat;
+    margin: 5px 15px;
+    width: 40px;
+    height: 55px;
+    background-size: contain;
+}
+
+.head {
+    background-color: Snow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+logo {
+    background: #D8E3AB url(../pic/logo.png) no-repeat 5% 50%;
+}
+
+.block-1 {
+    max-width: 395px;
+    height: 350px;
+    margin-right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+#pie, #columnAndPie{
+    width: 395px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../pic/sand.png);
+}
+
+#column2{
+    width: 320px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../pic/sand.png);
+}
+
+#column, #column3{
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url(../pic/sand.png);
+}
+
+.block-2 {
+    max-width: 420px;
+    height: 350px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.block-22 {
+    max-width: 350px;
+    height: 350px;
+    margin-right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+#rzpz {
+    width: 500px;
+    border-radius: 10px;
+    background-image: url(../pic/sand.png);
+}
+
+#bar {
+    width: 630px;
+    border-radius: 10px;
+    background-image: url(../pic/sand.png);
+}
+.block-3, .block-4 {
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.block-3 {
+    margin-right: 15px;
+}
+.container {
+    display: flex;
+    margin-top: 15px;
+  }
+.pic {
+    width: 75%;
+    padding-top: 0.5rem;
+}
+
+.clock {
+    font-size: 20px;
+    text-align: left;
+}
+
+select {
+    font-size: 20px;
+    width: 140px;
+    height: 35px;
+    padding: 4px;
+    border-radius:4px;
+    box-shadow: 2px 2px 8px #999;
+    background: #eee;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    }
+    label {
+    position: relative;
+    }
+    label:after {
+    content:'<>';
+    font: 20px "Consolas", monospace;
+    color: #666;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px; 
+    top:2px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    pointer-events: none;
+    }
+    label:before {
+    content: '';
+    right: 6px; 
+    top:0px;
+    width: 20px; 
+    height: 20px;
+    background: #eee;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+    }

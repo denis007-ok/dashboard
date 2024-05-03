@@ -1,0 +1,169 @@
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link href="css/itc-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <script src="js/itc-slider.js" defer></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/highcharts.js"></script>
+  <script src="js/drilldown.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="js/broken-axis.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
+</head>
+<body class="bg-gray-200">
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ps ps--active-y">
+    <header>
+        <div class="container-fluid py-4 content">
+            <div class="head">
+                <div class="logo"></div>
+                <div class="title">
+                    <h4>Октябрьский район Оренбургской области</h4>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid content">
+        <div class="row content">
+            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="card">
+                    <div class="card-header pt-2">
+                        <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
+                            <img src="pic/dx.png" class="pic">
+                        </div>
+                        <div class="text-end pt-1">
+                            <p class="text-sm mb-0 text-capitalize">Доходы бюджета</p>
+                            <h5 class="mb-0"><span class="profit">722 986,9</span> тыс. &#8381</h5>
+                        </div>
+                    </div>
+                    <hr class="dark horizontal my-0">
+                    <div class="card-footer">
+                        <p class="mb-0"><span class="text-success text-sm font-weight-bolder d-proc">+7,74% 🢅</span> к прошлому году</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="card">
+                    <div class="card-header pt-2">
+                        <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
+                            <img src="pic/rx.png" class="pic">
+                        </div>
+                        <div class="text-end pt-1">
+                            <p class="text-sm mb-0 text-capitalize">Расходы бюджета</p>
+                            <h5 class="mb-0"><span class="expense">731 609,8</span> тыс. &#8381</h5>
+                        </div>
+                    </div>
+                    <hr class="dark horizontal my-0">
+                    <div class="card-footer">
+                        <p class="mb-0">
+                            <span class="text-success text-sm font-weight-bolder r-proc">+2,47% 🢅</span> к прошлому году</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="card">
+                    <div class="card-header pt-2">
+                        <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                            <img src="pic/dp.png" class="pic">
+                        </div>
+                        <div class="text-end pt-1">
+                            <p class="text-sm mb-0 text-capitalize">Дефицит/Профицит</p>
+                            <h5 class="mb-0"><span class="deficit">-8 622,9</span> тыс. &#8381</h5>
+                        </div>
+                    </div>
+                    <hr class="dark horizontal my-0">
+                    <div class="card-footer" style="padding-bottom: 34px;">
+                        <p class="mb-0">
+                            <span class="text-danger text-sm font-weight-bolder"> </span> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="card">
+                    <div class="card-header pt-2">
+                        <div class="icon icon-lg icon-shape bg-gradient-info shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                            <img src="pic/db.png" class="pic">
+                        </div>
+                        <div class="text-end pt-1">
+                            <p class="text-sm mb-0 text-capitalize"></p>
+                            <label>
+                            <SELECT id="list">
+                                <OPTION VALUE="2021">2021</option>
+                                <OPTION VALUE="2022">2022</option>
+                                <OPTION VALUE="2023">2023</option>
+                                <OPTION VALUE="2024" selected>2024</option>    
+                            </SELECT>
+                        </label>
+                        </div>
+                    </div>
+                    <hr class="dark horizontal my-0">
+                    <div class="card-footer">
+                        <div class="clock" id="id_clock"></div>
+                            <script>digitalClock();</script>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid content mrg-10">
+    <div class="row content">
+        
+        <div class="container">
+            <div class="block-22">
+                <div id="column2"></div>
+            </div>
+            <div class="block-1">
+                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                    <div class="itc-slider__wrapper">
+                        <div class="itc-slider__items">
+                            <div class="itc-slider__item">
+                                <div id="pie"></div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div id="columnAndPie"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                    <button class="itc-slider__btn itc-slider__btn_next"></button>
+                </div>
+            </div>
+            <div class="block-2">
+                <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+                    <div class="itc-slider__wrapper">
+                        <div class="itc-slider__items">
+                            <div class="itc-slider__item">
+                                <div id="column"></div>
+                            </div>
+                            <div class="itc-slider__item">
+                                <div id="column3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                    <button class="itc-slider__btn itc-slider__btn_next"></button>
+                </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="block-3">
+                <div id="rzpz"></div>
+            </div>
+            <div class="block-4">
+                <div id="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <script src="js/chart.js"></script>
+    <p class="element">2024</p>
+  </main>
+</body>
+</html>
