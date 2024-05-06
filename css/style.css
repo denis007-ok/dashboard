@@ -53,14 +53,14 @@ logo {
 }
 
 #column, #column3{
-    width: 400px;
+    width: 407px;
     height: 350px;
     border-radius: 10px;
     background-image: url(../pic/sand.png);
 }
 
 .block-2 {
-    max-width: 420px;
+    max-width: 407px;
     height: 350px;
     
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
